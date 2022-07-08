@@ -1,0 +1,6 @@
+@import"./css/home.css";
+@import"./general.css";
+header{
+    background-color: yellow;
+    width: auto;
+}
