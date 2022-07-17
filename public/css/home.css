@@ -17,6 +17,9 @@ header{
 p{
     font-family: 'Roboto', sans-serif
 }
+.header__menu{
+    display: none;
+}
 .header__lista{
     list-style: none;
     padding-left: 3px;
@@ -32,32 +35,63 @@ font-size: var(--textSizePrecio);
     padding: 10px;
     border-radius: 5px;
 }
+.banner_p{
+    width: 100%;
+}
 /*main*/
+.body__main{
+    width: 90%;
+    margin: auto;
+}
 .main__productos__titulares{
     font-size: 24px;
-    font-family: 'Roboto', sans-serif
+    font-family: 'Roboto', sans-serif;
+    color:#666
 }
 .main__productos{
     text-align: center;
     font-size: 12px;
-    font-family: 'Roboto', sans-serif
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 12px;
 }
-.main__productos img{
-    height: 320px;
+.main__productos_principal{ 
+    margin: 15px 0px;
+}
+.main__productos_principal_img{
+    background-color: #fff;
+}
+.main__productos_principal_img img{
+    width: 100%;
 }
 .main__productos__precio{
     font-size: 18px;
-    font-family: 'Roboto', sans-serif
+    font-family: 'Roboto', sans-serif;
 }
-.main__productos__descuentos{
+.main__productos__articulo i{
+color: var(--colorVerde);
+display:block;
+height: 30px;
+width: 30px;
+border: 2px solid var(--colorVerde);
+border-radius: 50%;
+text-align: center;
+margin:5px 0px;
+padding-top: 6px;
+}
+.main__productos__articulo{
     font-size: 16px;
-    font-family: 'Roboto', sans-serif
+    font-family: 'Roboto', sans-serif;
+    border-top: 1px solid #ebebeb;
+    text-align: left;
+    background-color: #fff;
 }
-.main__productos__descripcion{
-    font-size: 16px;
-    font-family: 'Roboto', sans-serif
-}
+.main__productos__descuento{
+    color: #39b54a;
 
+}
+.main__productos_descripcion{
+    display: none;
+}
 /*footer*/
 .footer__formadepago1{
     color: blue;
@@ -100,4 +134,25 @@ font-size: var(--textSizePrecio);
     margin-bottom: 0px;
     line-height: 16px;
     font-family: 'Roboto', sans-serif;
+}
+
+/*Tablet*/
+@media(min-width:768px){
+    .header__menu{
+        display: block;
+    }
+    .burger-menu{
+        display: none;
+    }
+    .main__productos_descripcion{
+        display: block;
+    }
+    .main__productos_principal{ 
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+}
+/* computadora*/
+@media(min-width:1024px){
+
 }
