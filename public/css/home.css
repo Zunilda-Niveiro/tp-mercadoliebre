@@ -5,10 +5,23 @@ header{
     margin: 0;
     font-family: 'Roboto', sans-serif
 }
-.header__logo img{
-    width: 150px;
-
+.header__logo_img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
 }
+
+.header__logo img{
+    width: 40%;
+    height: 30%;
+}
+.header_buscar{
+    display: none; 
+}
+
 .header__logo_pagotarjeta{
     text-align: center;
     font-family: 'Roboto', sans-serif
@@ -23,7 +36,15 @@ p{
 .header__lista{
     list-style: none;
     padding-left: 3px;
-    font-family: 'Roboto', sans-serif
+    font-family: 'Roboto', sans-serif;
+    gap: 5px;
+}
+.header__lista_li{
+    list-style: none;
+    padding-left: 3px;
+    font-family: 'Roboto', sans-serif;
+    gap: 5px;
+    
 }
 .burger-menu{
     color: white;
@@ -40,8 +61,15 @@ font-size: var(--textSizePrecio);
 }
 /*main*/
 .body__main{
-    width: 90%;
-    margin: auto;
+    width: 100%;
+    text-align: justify;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.body_main{
+    background-color: #ebebeb;
+    
 }
 .main__productos__titulares{
     font-size: 24px;
@@ -54,29 +82,53 @@ font-size: var(--textSizePrecio);
     font-family: 'Roboto', sans-serif;
     margin-bottom: 12px;
 }
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    color: #39b54a;
+    }
+.main__test{
+    position: relative;
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align:justify;
+    display: flex;;
+    }
 .main__productos_principal{ 
-    margin: 15px 0px;
+    margin: 10px 10px;
+    text-align: center;
+    
 }
-.main__productos_principal_img{
+.main__productos_principal_art{
     background-color: #fff;
 }
-.main__productos_principal_img img{
+.main__productos_principal_art img{
     width: 100%;
 }
 .main__productos__precio{
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
+    width: 40%;
+    margin-bottom: 10px;
+    font-weight: 400;
+
+
 }
-.main__productos__articulo i{
-color: var(--colorVerde);
-display:block;
-height: 30px;
-width: 30px;
-border: 2px solid var(--colorVerde);
-border-radius: 50%;
-text-align: center;
-margin:5px 0px;
-padding-top: 6px;
+.main__productos__descuento{
+    color: #39b54a;
+    width: 50%;
+    font-weight: 400;
+    font-size: var(--descripcionesYdescuentos);
 }
 .main__productos__articulo{
     font-size: 16px;
@@ -84,10 +136,6 @@ padding-top: 6px;
     border-top: 1px solid #ebebeb;
     text-align: left;
     background-color: #fff;
-}
-.main__productos__descuento{
-    color: #39b54a;
-
 }
 .main__productos_descripcion{
     display: none;
@@ -138,21 +186,116 @@ padding-top: 6px;
 
 /*Tablet*/
 @media(min-width:768px){
-    .header__menu{
-        display: block;
+    .header__articulo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
     }
+    .header_buscar{
+        display: none;
+    }
+    .header__barra{
+        display: flex;
+        flex-direction: row;
+    }
+    .header__logo_pagotarjeta{
+        font-size: 13px;
+    }
+    .header__menu{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 150px;
+        margin-top: 30px;
+    }
+    .header__lista{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-bottom: 10px;
+    }
+    ul.header__lista_li{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-bottom: 10px;
+    }
+
+    /*.header__menu{
+        display: block;
+    }*/
     .burger-menu{
         display: none;
     }
+    .main__productos{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0px 20px 0px 20px ;
+
+    }
+    .main__productos__articulo_img{
+        width: 50%;
+    }
+    
+    /*.main__productos__articulo_img{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 50%;
+    }*/
     .main__productos_descripcion{
         display: block;
+        flex-wrap: wrap;
     }
     .main__productos_principal{ 
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 40%;
+        margin: 10px 10px;
+        align-items: center;
+    }
+    
+    
     }
 
-}
 /* computadora*/
 @media(min-width:1024px){
+    .body__main{
+        height: 100%;
+        width: 100%;
+    }
+    .header__menu{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 400px;
+    }
+    .header__logo_pagotarjeta{
+        font-size: 16px;
+    }
+    .header__lista{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        gap: 7px;
+
+    }
+    .header__lista_li{
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        gap: 7px;
+    }
+    .main__productos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-araund;
+        gap: 35px;
+        
+    }
+    .main__productos_principal{
+        width: 20%;
+    }
 
 }
