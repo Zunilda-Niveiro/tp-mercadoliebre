@@ -1,27 +1,49 @@
 
-header{
+.header__logo{
+    display: flex;
+    width: 100%;
     background-color: yellow;
-    width: auto;
-    margin: 0;
-    font-family: 'Roboto', sans-serif
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 .header__logo_img{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    width: 50%;
+}
+.header__logo_img img{
+    width: 100%;
+}
+.header__barra{
+    width: 50%;
+    display: flex;
     flex-wrap: wrap;
     align-items: center;
-    position: relative;
 }
-
-.header__logo img{
-    width: 40%;
-    height: 30%;
+.header__barra input{
+    width: 90%;
+    border: none;
+    padding: 10px 0;
+    border-radius: 5px 0 0 5px;
 }
-.header_buscar{
-    display: none; 
+.header__barra button{
+    width: 10%;
+    padding: 10px 0;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #FFF;
 }
-
+.header__barra button i{
+    font-size: 12px;
+    
+}
+.header__articulo{
+    display:flex;
+    width: 100%;
+    justify-content: center;
+    padding-top: 10px;
+    font-size: 12px;
+}
 .header__logo_pagotarjeta{
     text-align: center;
     font-family: 'Roboto', sans-serif
@@ -46,15 +68,17 @@ p{
     gap: 5px;
     
 }
-.burger-menu{
-    color: white;
-    text-align: center;
-font-size: var(--textSizePrecio);
+.burger-menu{ 
+    display: flex;
+    width: 100%;
+    padding-top: 20px;
+    justify-content: center;
 }
 .burger-menu i {
     background-color: var(--colorCeleste);
     padding: 10px;
     border-radius: 5px;
+    color: #FFF;
 }
 .banner_p{
     width: 100%;
@@ -66,6 +90,7 @@ font-size: var(--textSizePrecio);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    background-color: #ebebeb;
 }
 .body_main{
     background-color: #ebebeb;
@@ -99,18 +124,20 @@ main section article i{
 .main__test{
     position: relative;
     background-color: white;
-    margin-top: 10px;
     margin-bottom: 10px;
     text-align:justify;
-    display: flex;;
+    display: flex;
+    border-top:1px solid  #ebebeb;
     }
 .main__productos_principal{ 
     margin: 10px 10px;
-    text-align: center;
+    align-items: center;
+    justify-content:center ;
     
 }
 .main__productos_principal_art{
     background-color: #fff;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 .main__productos_principal_art img{
     width: 100%;
@@ -221,10 +248,18 @@ main section article i{
         justify-content: flex-end;
         margin-bottom: 10px;
     }
-
-    /*.header__menu{
-        display: block;
-    }*/
+    .main__productos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .main__productos_principal_art{
+        width: 48%;
+    }
+    .main__productos_descripcion{
+        text-align: left;
+    }
     .burger-menu{
         display: none;
     }
@@ -233,6 +268,7 @@ main section article i{
         flex-wrap: wrap;
         width: 100%;
         margin: 0px 20px 0px 20px ;
+        gap: 20px;
 
     }
     .main__productos__articulo_img{
@@ -294,7 +330,7 @@ main section article i{
         gap: 35px;
         
     }
-    .main__productos_principal{
+    .main__productos_principal_art{
         width: 20%;
     }
 
