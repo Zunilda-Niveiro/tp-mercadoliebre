@@ -47,15 +47,15 @@
 </head>
 <main class="register__main" >
     <section class="register__main_section general__main_section">
-        <h1>Registrate</h1>
+        <h1 class="form__titulo">Registrate</h1>
         <hr>
         <form action="">
             <div class="main__form">
-                <label class="form__label" for="nombre y apellido"> Nombre y Apellido</label>
-                <input class="form__input" type=" text" type="text" id="nombre y apellido">
+                <label class="form__label"  for="nombre y apellido"> Nombre y Apellido</label>
+                <input class="form__input" placeholder="Nombre y Apellido" type=" text" type="text" id="nombre y apellido">
             </div>
             <div class="main__form">
-                <label class="form__label" for="email">Nombre de Usuari@</label>
+                <label class="form__label" aria-placeholder="Nombre de usuari@" for="email">Nombre de Usuari@</label>
                 <input class="form__input" type="text" type="email" id="email">
             </div>
             <div class="main__form">
@@ -63,14 +63,14 @@
                 <input class="form__input" type="date" id="date">
             </div>
             <div class="main__form">
-                <h5>Perfil del Usuario desea:</h5>
+                <h5 class="form__subtitulo" >Perfil del Usuario</h5>
                 <label for="comprar"><input class="main__input_radio" type="radio" id="comprar"
                 name="comprar">Comprar</label>
                 <label for="vender"><input class="main__input_radio" type="radio" id="vender"
                     name="vender">Vender</label>
             </div>
             <div class="form__box">
-                <h5 class="form__subTitle">Domicilio</h5>
+                <h5 class="form__subtitulo">Domicilio</h5>
                 <select class="form__select" name="city" id="city">
                     <option value="" hidden selected>Seleccione su Ciudad...</option>
                     <option value="Lanus">Lanus</option>
@@ -79,8 +79,8 @@
                     <option value="Quilmes">Quilmes</option>
                 </select>
             </div>
-            <div class="main__form">
-                <h5>Categorias de interes:</h5>
+            <div class="main__form_categoria">
+                <h5 class="form__subtitulo" >Categorias de interes:</h5>
                 <label for="electro"><input class="main__input_radio" value="electro" type="checkbox" id="electro"
                 name="electro">Electro</label>
                 <label for="moda"><input class="main__input_radio" value="moda" type="checkbox" id="moda"

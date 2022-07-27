@@ -2,6 +2,11 @@ input:-wedkit-autofill, input:-wedkit-autofill:hover,
 input:-wedkit-autofill:focus, input:-wedkit-autofill:active {
 -wedkit-box-shadow: 0 0 0 30px white inset !important;
 }
+.register__main{
+    background-color:#ebebeb;
+    width: 100%;
+}
+
 .form{
     display:flex;
     flex-wrap: wrap;
@@ -9,8 +14,12 @@ input:-wedkit-autofill:focus, input:-wedkit-autofill:active {
     gap: 30px;
 }
 
-.form__title{
+.form__titulo{
     text-align: center;
+}
+.form__subtitulo{
+    font-weight: bold;
+    margin: 5px 0 5px 0;
 }
 
 .main___form{
@@ -18,13 +27,21 @@ input:-wedkit-autofill:focus, input:-wedkit-autofill:active {
 }
 
 .form__input{
-    width: 100%;
+    width: 80%;
     padding: 10px 0;
     border: none;
     border-bottom: 1px solid silver;
     outline: none;
 }
-
+.main__form_categoria{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 10px;
+}
+.main__input_radio{
+    margin-right: 10px;
+}
 @media (min-width:768px) {
     .form{
         flex-direction: row;
