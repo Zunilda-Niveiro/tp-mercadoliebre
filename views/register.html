@@ -48,15 +48,14 @@
 <main class="register__main" >
     <section class="register__main_section general__main_section">
         <h1 class="form__titulo">Registrate</h1>
-        <hr>
-        <form action="">
+        <form action="" class="form">
             <div class="main__form">
-                <label class="form__label"  for="nombre y apellido"> Nombre y Apellido</label>
+                <label class="form__label"  for="nombre y apellido"></label>
                 <input class="form__input" placeholder="Nombre y Apellido" type=" text" type="text" id="nombre y apellido">
             </div>
             <div class="main__form">
-                <label class="form__label" aria-placeholder="Nombre de usuari@" for="email">Nombre de Usuari@</label>
-                <input class="form__input" type="text" type="email" id="email">
+                <label class="form__label"  for="email"></label>
+                <input class="form__input" placeholder="Nombre de usuari@" type="text" type="email" id="email">
             </div>
             <div class="main__form">
                 <label class="form__label" for="date">Fecha de Nacimiento:</label>
@@ -92,13 +91,19 @@
                                 <label for="vida sana"><input class="main__input_radio" value="vida sana" type="checkbox" id="vida sana"
                                 name="vida sana">Vida Sana</label>
             </div>
-            <div class="main__form">
-                <label class="form__label" for="password">Contraseña:</label>
-                <input class="form__input" type="password" id="password">
+            <div>
+                <input type="file" name="Foto de usuari@" id="">
             </div>
             <div class="main__form">
-                <label class="form__label" for="password2">Confirmar Contraseña:</label>
-                <input class="form__input" type="password" id="password2">
+                <label class="form__label" for="password"></label>
+                <input class="form__input" placeholder="Contraseña" type="password" id="password">
+            </div>
+            <div class="main__form">
+                <label class="form__label1" for="password2"></label>
+                <input class="form__input" placeholder="Confirmar Contraseña" type="password" id="password2">
+                <div class="form__button">
+                    <a href="" class="form__button_cancel">Cancelar</a>
+                </div>
             </div>
         </form>
     </section>
