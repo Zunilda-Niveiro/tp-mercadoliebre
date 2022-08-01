@@ -27,15 +27,15 @@
             </article>
             <nav class="header__menu">
                 <ul class="header__lista">
-                    <li>Ofertas </li>
-                    <li>Tiendas Oficiales </li>
-                    <li>Vender </li>
-                    <li>Ayuda </li>
+                    <li><a href=""> Ofertas </li></a>
+                    <li><a href=""> Tiendas Oficiales </li></a>
+                    <li><a href=""> Vender </li></a>
+                    <li><a href=""> Ayuda </li></a>
                 </ul>
                 <ul class="header__lista_li">
-                    <li>>Creá tu cuenta <i class="fa-solid fa-address-card"></i>
-                    <li> Ingresá <i class="fa-solid fa-arrow-right-to-bracket"></i>
-                    <li> Mis compras <i class="fa-solid fa-basket-shopping"></i>
+                    <li><a href="/register">Creá tu cuenta <i class="fa-solid fa-address-card"></i></a>
+                    <li><a href="/login"> Ingresá <i class="fa-solid fa-arrow-right-to-bracket"></i></a>
+                    <li><a href=""> Mis compras <i class="fa-solid fa-basket-shopping"></i></a>
                 </ul>
             </nav>
             <div class="burger-menu">
@@ -52,10 +52,12 @@
             <div class="main__form">
                 <label class="form__label"  for="nombre y apellido"></label>
                 <input class="form__input" placeholder="Nombre y Apellido" type=" text" type="text" id="nombre y apellido">
+                <small class="form__text_error">* Campo obligatorio</small>
             </div>
             <div class="main__form">
                 <label class="form__label"  for="email"></label>
                 <input class="form__input" placeholder="Nombre de usuari@" type="text" type="email" id="email">
+                <small class="form__text_error">* Campo obligatorio</small>
             </div>
             <div class="main__form">
                 <label class="form__label" for="date">Fecha de Nacimiento:</label>
@@ -103,6 +105,7 @@
                 <input class="form__input" placeholder="Confirmar Contraseña" type="password" id="password2">
                 <div class="form__button">
                     <a href="" class="form__button_cancel">Cancelar</a>
+                    <button class="form__button_enviar">Enviar<a href="/home"></button></a>
                 </div>
             </div>
         </form>

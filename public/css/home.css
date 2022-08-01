@@ -1,7 +1,6 @@
 
 .header__logo{
     display: flex;
-    width: 100%;
     background-color: yellow;
     justify-content: space-between;
     flex-direction: row;
@@ -214,20 +213,42 @@ main section article i{
 /*Tablet*/
 @media(min-width:768px){
     .header__articulo{
+        width: 60%;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
         align-items: center;
     }
+    /*.header__logo_section{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }*/
+    .header__logo_section img{
+        width: 35%;
+    }
+    
+    /*.header__logo_img{
+        width: 40%;
+    }*/
     .header_buscar{
         display: none;
     }
     .header__barra{
+        width: 500px;
         display: flex;
         flex-direction: row;
+        text-align: center;
     }
     .header__logo_pagotarjeta{
+        width: 80%;
         font-size: 13px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .header__logo_input{
+        width: 30%;
+        height: 10px;
+
     }
     .header__menu{
         display: flex;
@@ -245,7 +266,7 @@ main section article i{
     ul.header__lista_li{
         display: flex;
         flex-direction: row;
-        justify-content: flex-end;
+        text-align: right;
         margin-bottom: 10px;
     }
     .main__productos{
