@@ -15,15 +15,17 @@
                     <img src="/images/logo-mercado-liebre.svg"
                 alt="logo-mercado-liebre">
             </div>
+            <div class="header__logo_buscar">
                 <form action="" class="header__barra">
                     <input class="header__logo_input" placeholder="Buscar productos, marca" type="text" name="" id="">
                     <button> <i class="fa-solid fa-magnifying-glass"></i></button>
-                    <article class="header__articulo">
-                        <p class="header__logo_pagotarjeta"><i class="fa-solid fa-hand-holding-dollar"></i>
-                        Comprá en cuotas y sin tarjeta de crédito
-                        </p>
                 </form>
-                    </article>
+            </div>
+                    <div class="header__articulo">
+                        <p class="header__logo_pagotarjeta"><i class="fa-solid fa-hand-holding-dollar"></i>
+                            Comprá en cuotas y sin tarjeta de crédito
+                        </p>
+                    </div>
         </section>
             <nav class='header__menu'>
                 <ul class='header__lista'>
@@ -42,11 +44,11 @@
                 <i class="fa-solid fa-bars"></i>
             </div>
         </header>
-        <img class="banner_p" src="/images/img-home-banner.jpg" alt="home-banner.jpg">
+    <img class="banner_p" src="/images/img-home-banner.jpg" alt="home-banner.jpg">
         <main class="body__main">
             <h3 class="main__productos__titulares"> Basado en tu última visita</h3>
-            <section class="main__productos">
-                        <article class="main__productos_principal_art">
+            <section class="main__productos section_productos">
+                        <article class="main__productos_principal_art card_article">
                             <div class="main__productos_img">
                                 <img src="/images/img-cafetera-moulinex.jpg" alt="cafetera">
                             </div>
@@ -57,7 +59,7 @@
                             </div>
                                 <p class="main__productos_descripcion">Cafetera Moulinex</p>
                         </article>
-                    <article class="main__productos_principal_art">
+                    <article class="main__productos_principal_art card_article">
                         <img src="/images/img-macbook-pro-2019.jpg" alt="macbook">
                 <div class="main__test">
                             <i class="fa-solid fa-truck"></i>
@@ -66,13 +68,9 @@
                         </div>
                         <p class="main__productos_descripcion">MacBook Pro 2019</p>
                     </article>
-                
-
-                
-                    <article class="main__productos_principal_art">
+                    <article class="main__productos_principal_art card_article">
                         <img src="/images/img-samsung-galaxy-s10.jpg" alt="Samsung
                         Galaxy">
-                   
                 <div class="main__test">
                             <i class="fa-solid fa-truck"></i>
                         <p class="main__productos__precio">$70.500</p>
@@ -80,13 +78,9 @@
                 </div>
                         <p class="main__productos_descripcion">Samsung Galaxy S10</p>
                     </article>
-            
-
-                
-                    <article class="main__productos_principal_art">
+                    <article class="main__productos_principal_art card_article">
                         <img src="/images/img-tv-samsung-smart.jpg" alt="SmartTv
                         Samsung">
-                   
                 <div class="main__test">
                             <i class="fa-solid fa-truck"></i>
                         <p class="main__productos__precio">$23.200</p>
@@ -97,10 +91,10 @@
                 
             </section>
             <h3 class="main__productos__titulares"> Sección de Ofertas</h3>
-            <section class="main__productos">
+            <section class="main__productos section_productos">
                 
                 
-                    <article class="main__productos_principal_art">
+                    <article class="main__productos_principal_art card_article">
                         <img src="/images/img-cafetera-moulinex.jpg" alt="cafetera">
                     
                 <div class="main__test">
@@ -112,7 +106,7 @@
                     </article>
                 
                 
-                    <article class="main__productos_principal_art">
+                    <article class="main__productos_principal_art card_article">
                         <img src="/images/img-macbook-pro-2019.jpg" alt="macbook">
                     
                 <div class="main__test">
@@ -124,7 +118,7 @@
                     </article>
 
                 
-                    <article class="main__productos_principal_art">
+                    <article class="main__productos_principal_art card_article">
                         <img src="/images/img-samsung-galaxy-s10.jpg" alt="Samsung
                         Galaxy">
                     
@@ -137,7 +131,7 @@
                     </article>
 
                 
-                    <article class="main__productos_principal_art">
+                    <article class="main__productos_principal_art card_article">
                         <img src="/images/img-tv-samsung-smart.jpg" alt="SmartTv
                         Samsung">
                     
@@ -150,24 +144,29 @@
                     </article>
             </section>
         </main>
-        <footer>
-            <div class="footer__formadepago1"><i class="fa-solid fa-credit-card"></i>
-                <h5 class="footer__info"> Pagá con tarjeta o en efectivo</h5>
-                <p class="footer__info">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta
-                    o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
-            </div>
-            <div class="footer__formadepago2"><i class="fa-solid fa-gift"></i>
-                <h5 class="footer__info"> Envío gratis desde $ 2.500</h5>
-                <p class="footer__info">Solo por estar registrad@ en Mercado Liebre tenés envíos
-                    gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
-            </div>
-            <div class="footer__formadepago3"><i class="fa-solid fa-user-shield"></i>
-                </div>
-                <h5 class="footer__info"> Seguridad, de principio a fin</h5>
-                <p class="footer__info">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que
-                    no puedas hacer,porque estás siempre protegid@.</p>
-                <p class="footer__info">
-            </div>
+        <footer class="footer">
+            <article class="footer_formadepago">
+                    <div class="footer__formadepago1"><i class="fa-solid fa-credit-card"></i>
+                        <h5 class="footer__info"> Pagá con tarjeta o en efectivo</h5>
+                        <p class="footer__info">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta
+                        o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+                    </div>
+            </article>
+            <article class="footer_formadepago">
+                    <div class="footer__formadepago2"><i class="fa-solid fa-gift"></i>
+                        <h5 class="footer__info"> Envío gratis desde $ 2.500</h5>
+                        <p class="footer__info">Solo por estar registrad@ en Mercado Liebre tenés envíos
+                        gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
+                    </div>
+            </article>
+            <article class="footer_formadepago">
+                    <div class="footer__formadepago3"><i class="fa-solid fa-user-shield"></i>
+                    </div>
+                        <h5 class="footer__info"> Seguridad, de principio a fin</h5>
+                        <p class="footer__info">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que
+                        no puedas hacer,porque estás siempre protegid@.</p>
+                    </div>
+            </article>
             <div>
                 <h6>● Copyright © 1999-2020 MercadoLiebre S.R.L.</h6>
             </div>

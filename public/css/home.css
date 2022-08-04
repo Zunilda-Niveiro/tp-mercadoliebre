@@ -6,24 +6,31 @@
     flex-direction: row;
     flex-wrap: wrap;
 }
-.header__logo_img{
+.header__logo_section{
     display: flex;
-    width: 50%;
+    flex-wrap: wrap;
+    align-items: center;
 }
+.header__logo_section div{
+    width: 48%;
+}
+.header__logo_section div:last-child{
+    width: 100%;
+}
+
 .header__logo_img img{
     width: 100%;
 }
 .header__barra{
-    width: 50%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
 }
 .header__barra input{
-    width: 90%;
+    width: 70%;
     border: none;
-    padding: 10px 0;
     border-radius: 5px 0 0 5px;
+    padding: 10px 0;
 }
 .header__barra button{
     width: 10%;
@@ -36,13 +43,7 @@
     font-size: 12px;
     
 }
-.header__articulo{
-    display:flex;
-    width: 100%;
-    justify-content: center;
-    padding-top: 10px;
-    font-size: 12px;
-}
+
 .header__logo_pagotarjeta{
     text-align: center;
     font-family: 'Roboto', sans-serif
@@ -119,6 +120,7 @@ main section article i{
     right: 20px;
     top: -15px;
     color: #39b54a;
+    transition: 1s;
     }
 .main__test{
     position: relative;
@@ -127,6 +129,9 @@ main section article i{
     text-align:justify;
     display: flex;
     border-top:1px solid  #ebebeb;
+    }
+    .main__test i:hover {
+        transform: rotate(360deg);
     }
 .main__productos_principal{ 
     margin: 10px 10px;
@@ -167,6 +172,7 @@ main section article i{
     display: none;
 }
 /*footer*/
+
 .footer__formadepago1{
     color: blue;
     text-align: center;
@@ -212,44 +218,23 @@ main section article i{
 
 /*Tablet*/
 @media(min-width:768px){
-    .header__articulo{
-        width: 60%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-    /*.header__logo_section{
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-    }*/
-    .header__logo_section img{
-        width: 35%;
-    }
-    
-    /*.header__logo_img{
-        width: 40%;
-    }*/
-    .header_buscar{
-        display: none;
-    }
-    .header__barra{
-        width: 500px;
-        display: flex;
-        flex-direction: row;
-        text-align: center;
-    }
-    .header__logo_pagotarjeta{
-        width: 80%;
-        font-size: 13px;
-        display: flex;
-        justify-content: flex-end;
-    }
-    .header__logo_input{
-        width: 30%;
-        height: 10px;
 
+    /*header*/
+
+    .header__logo_section{
+        justify-content: space-around;
     }
+
+   .header__logo_section div{
+    width: 30%;
+   }
+   .header__logo_section div:last-child{
+    width: 30%;
+   }
+   .header__barra{
+    align-items: center;
+    justify-content: center;
+   }
     .header__menu{
         display: flex;
         flex-direction: row;
@@ -257,6 +242,7 @@ main section article i{
         gap: 150px;
         margin-top: 30px;
     }
+
     .header__lista{
         display: flex;
         flex-direction: row;
@@ -269,16 +255,27 @@ main section article i{
         text-align: right;
         margin-bottom: 10px;
     }
+
+    /*main*/
+
     .main__productos{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
     }
+    
     .main__productos_principal_art{
         width: 48%;
     }
-    .main__productos_descripcion{
+    .main__productos_principal_art:hover {
+        box-shadow: 5px 5px 10px gray;
+    }
+    .main__productos_principal_art{
+        transition: 2s;
+
+    }
+    .main__productos_descripcion {
         text-align: left;
     }
     .burger-menu{
@@ -292,16 +289,17 @@ main section article i{
         gap: 20px;
 
     }
+    /*.card_article{
+        transition: 2s;
+    }
+    .card_article:hover {
+        box-shadow: 5px 5px 10px gray;
+
+    }*/
     .main__productos__articulo_img{
         width: 50%;
     }
     
-    /*.main__productos__articulo_img{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 50%;
-    }*/
     .main__productos_descripcion{
         display: block;
         flex-wrap: wrap;
@@ -318,6 +316,13 @@ main section article i{
 
 /* computadora*/
 @media(min-width:1024px){
+
+    /*header*/
+
+    .header__logo_section{
+        width: 100%;
+    }
+    
     .body__main{
         height: 100%;
         width: 100%;
@@ -344,6 +349,9 @@ main section article i{
         justify-content: right;
         gap: 7px;
     }
+
+    /* main*/
+
     .main__productos{
         display: flex;
         flex-direction: row;
@@ -354,5 +362,20 @@ main section article i{
     .main__productos_principal_art{
         width: 20%;
     }
+    .main__productos_descripcion {
+        display: none;
+    }
+    .main__productos_descripcion:hover {
+        display: block;
 
+    }
+    .footer{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+.footer_formadepago{
+    width: 30%;
+}
 }
